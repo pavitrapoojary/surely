@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURELY — Know Where Everything Is | Family Financial & Document Memory</title>
+  <meta name="description" content="SURELY is a shared family financial memory checklist. The key to what your family already owns — before it's urgent.">
+  
+  <!-- Google Fonts: Fraunces & Lora (Warm Serif) + Inter & Source Sans 3 (Humanist Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/views.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Top Sticky Navigation Bar
+       ========================================================================= -->
+  <header class="site-nav" role="banner">
+    <div class="container site-nav-inner">
+      <a href="#hero" class="brand-logo" aria-label="SURELY Homepage">
+        <div class="brand-icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="7.5" cy="15.5" r="5.5"></circle>
+            <path d="m21 2-9.6 9.6"></path>
+            <path d="m15.5 7.5 3 3L22 7l-3-3"></path>
+          </svg>
+        </div>
+        <span class="brand-wordmark">SURELY</span>
+        <span class="brand-tag">Prototype</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#problem" class="nav-link">The Problem</a></li>
+          <li><a href="#opportunity" class="nav-link">Market Size</a></li>
+          <li><a href="#ideation" class="nav-link">Ideation</a></li>
+          <li><a href="#prototype" class="nav-link">Prototype Demo</a></li>
+          <li><a href="#validation" class="nav-link">Validation</a></li>
+          <li><a href="#story" class="nav-link">The Story</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#prototype" class="btn btn-primary btn-sm btn-try-proto">
+          Try the Prototype
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- =======================================================================
+         Section 1: Hero Section (§4.1)
+         ======================================================================= -->
+    <section id="hero" class="section-wrapper hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="eyebrow-pill">A FAMILY FINANCIAL & DOCUMENT MEMORY PLATFORM</span>
+            <div class="hero-title-group">
+              <h1 class="hero-title">SURELY</h1>
+              <p class="hero-subtitle">"Know where everything is."</p>
+              <p class="hero-oneliner">The key to what your family already owns — documented calmly together before an emergency makes it urgent.</p>
+            </div>
+
+            <div class="hero-ctas">
+              <a href="#prototype" class="btn btn-primary btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Try the prototype
+              </a>
+              <a href="#problem" class="btn btn-outline btn-lg">
+                Read the story
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-trust-strip">
+              <div class="hero-trust-item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Privacy-first masked balances</span>
+              </div>
+              <div class="hero-trust-item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Under 60-second guided entries</span>
+              </div>
+              <div class="hero-trust-item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </span>
+                <span>Instant emergency mode</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-card">
+              <div class="hero-image-wrapper">
+                <img src="img/hero-cover.jpg" alt="Indian father and adult daughter sitting together by a sunlit wooden desk noting down family documents with chai" class="hero-image" loading="eager">
+                <div class="hero-image-overlay">
+                  <span class="hero-card-tag">Twenty ordinary minutes over tea</span>
+                  <span class="badge badge-sage">No Fintech Clutter</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-floating-badge">
+              <div class="badge-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <span class="badge-text">Joint family memory ledger for ageing parents & adult children</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 2: The Problem (§4.2)
+         ======================================================================= -->
+    <section id="problem" class="section-wrapper alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-pill">EMPATHISE & DEFINE</span>
+          <h2 class="section-title">The Invisible Family Blindspot</h2>
+          <p class="section-subtitle">Financial information in Indian households is scattered across old passbooks, almirah drawers, and memory. Invisible on good days, agonizing in a crisis.</p>
+        </div>
+
+        <!-- Pull-Quote Cards -->
+        <div class="problem-quotes-grid">
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p class="quote-body">"I'm not 100% sure I've listed everything. There could be an FD I opened decades ago that I've forgotten about."</p>
+            <div class="quote-author">
+              <div class="author-avatar">SR</div>
+              <div class="author-info">
+                <span class="author-name">Suresh, 61</span>
+                <span class="author-role">Father & Retired Teacher</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p class="quote-body">"After Papa's stroke, we found three passbooks, one closed account, and an insurance policy we didn't even know existed."</p>
+            <div class="quote-author">
+              <div class="author-avatar">AR</div>
+              <div class="author-info">
+                <span class="author-name">Arjun, 33</span>
+                <span class="author-role">Adult Child & Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <span class="quote-mark">“</span>
+            <p class="quote-body">"I want my son to know where everything is, without it feeling like I'm handing over control before I'm ready to."</p>
+            <div class="quote-author">
+              <div class="author-avatar">LM</div>
+              <div class="author-info">
+                <span class="author-name">Lata, 58</span>
+                <span class="author-role">Mother & Home Record-keeper</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem Definition Box -->
+        <div class="problem-definition-box">
+          <h3 class="problem-def-title">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--terracotta)" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            Problem Definition Framework
+          </h3>
+          <div class="problem-def-grid">
+            <div class="problem-def-item">
+              <span class="def-label">Who</span>
+              <p class="def-text">Adult children (28–45) coordinating care for ageing parents (55+), and parents seeking generational clarity.</p>
+            </div>
+            <div class="problem-def-item">
+              <span class="def-label">What</span>
+              <p class="def-text">No single family member has a current, complete picture of what exists, where physical copies sit, or who the agents/nominees are.</p>
+            </div>
+            <div class="problem-def-item">
+              <span class="def-label">When</span>
+              <p class="def-text">Invisible in day-to-day life; acutely painful during sudden medical hospitalization, stroke, or bereavement.</p>
+            </div>
+            <div class="problem-def-item">
+              <span class="def-label">Why It Matters</span>
+              <p class="def-text"><span class="def-highlight">₹78,213 Crore</span> sits completely unclaimed in RBI's Depositor Education and Awareness Fund (+26% YoY).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Storyboard 1 Strip -->
+        <div class="storyboard-strip-header">
+          <h3 style="font-size: 1.25rem;">Storyboard 1 — The Problem Journey</h3>
+          <span class="badge badge-terracotta">4 Key Scenes</span>
+        </div>
+        <div class="storyboard-grid">
+          <div class="storyboard-card">
+            <div class="storyboard-img-box">
+              <span class="storyboard-panel-badge">S1 · Panel 1</span>
+              <img src="img/storyboard-1-panel-1.jpg" alt="Elderly father looking at old cupboards and passbooks wondering where his FDs are" class="storyboard-img" loading="lazy">
+            </div>
+            <p class="storyboard-caption"><strong>Scattered Paperwork:</strong> Decades of savings scattered across steel almirahs, old passbooks, and forgotten drawers.</p>
+          </div>
+
+          <div class="storyboard-card">
+            <div class="storyboard-img-box">
+              <span class="storyboard-panel-badge">S1 · Panel 2</span>
+              <img src="img/storyboard-1-panel-2.jpg" alt="Adult son and daughter stressed at hospital reception searching for insurance policy numbers" class="storyboard-img" loading="lazy">
+            </div>
+            <p class="storyboard-caption"><strong>Emergency Scramble:</strong> At the hospital reception at night, children frantically search for policy numbers and TPA cards.</p>
+          </div>
+
+          <div class="storyboard-card">
+            <div class="storyboard-img-box">
+              <span class="storyboard-panel-badge">S1 · Panel 3</span>
+              <img src="img/storyboard-1-panel-3.jpg" alt="Indian mother talking gently over tea with son about wanting to share without losing control" class="storyboard-img" loading="lazy">
+            </div>
+            <p class="storyboard-caption"><strong>The Dignity Dilemma:</strong> Parents want to inform their children, but fear losing autonomy or feeling micromanaged.</p>
+          </div>
+
+          <div class="storyboard-card">
+            <div class="storyboard-img-box">
+              <span class="storyboard-panel-badge">S1 · Panel 4</span>
+              <img src="img/storyboard-1-panel-4.jpg" alt="Unclaimed deposits and ledgers accumulating dust in institutional vaults across India" class="storyboard-img" loading="lazy">
+            </div>
+            <p class="storyboard-caption"><strong>The Unclaimed Reality:</strong> Billions of rupees in life savings sit orphaned in RBI vaults because families simply didn't know.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 3: The Opportunity (§4.3)
+         ======================================================================= -->
+    <section id="opportunity" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-pill">MARKET SIZE & OPPORTUNITY</span>
+          <h2 class="section-title">A Massive, Untapped Market</h2>
+          <p class="section-subtitle">Demographic shifts and growing wealth transfer make family document memory an urgent national need.</p>
+        </div>
+
+        <!-- 3 Stat Cards -->
+        <div class="stats-cards-grid">
+          <div class="stat-card">
+            <div class="stat-number">289M</div>
+            <div class="stat-label">Indian Households</div>
+            <div class="stat-sublabel">Total national household universe (2024)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">153M</div>
+            <div class="stat-label">People Aged 60+ in India</div>
+            <div class="stat-sublabel">Rapidly growing senior population (2023)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">₹78,213 Cr</div>
+            <div class="stat-label">Unclaimed Bank Deposits</div>
+            <div class="stat-sublabel">+26% YoY growth in RBI DEAF fund</div>
+          </div>
+        </div>
+
+        <!-- TAM / SAM / SOM Funnel Visualizer -->
+        <div class="market-funnel-container">
+          <div class="funnel-header">
+            <div>
+              <h3 style="font-size: 1.35rem; color: var(--brown-ink);">TAM → SAM → SOM Market Funnel</h3>
+              <p style="font-size: var(--text-xs); color: var(--brown-muted); margin-top: 0.25rem;">Estimation of addressable urban and digitally active households</p>
+            </div>
+            <span class="badge badge-gold">B-School Market Sizing</span>
+          </div>
+
+          <div class="funnel-bars">
+            <div class="funnel-row">
+              <div>
+                <span class="funnel-tier">TAM</span>
+                <span class="funnel-tier-desc" style="display:block;">Total Addressable</span>
+              </div>
+              <div class="funnel-bar-track">
+                <div class="funnel-bar-fill fill-tam">~100M–110M Households</div>
+              </div>
+              <div class="funnel-value">~100–110 Million</div>
+            </div>
+
+            <div class="funnel-row">
+              <div>
+                <span class="funnel-tier">SAM</span>
+                <span class="funnel-tier-desc" style="display:block;">Serviceable Addressable</span>
+              </div>
+              <div class="funnel-bar-track">
+                <div class="funnel-bar-fill fill-sam">~17M–18M Households</div>
+              </div>
+              <div class="funnel-value">~17–18 Million</div>
+            </div>
+
+            <div class="funnel-row">
+              <div>
+                <span class="funnel-tier">SOM (Year 3)</span>
+                <span class="funnel-tier-desc" style="display:block;">Year 3 Scale Target</span>
+              </div>
+              <div class="funnel-bar-track">
+                <div class="funnel-bar-fill fill-som-y3">150k–200k Households (~1% SAM)</div>
+              </div>
+              <div class="funnel-value">150,000–200,000</div>
+            </div>
+
+            <div class="funnel-row">
+              <div>
+                <span class="funnel-tier">SOM (Year 1)</span>
+                <span class="funnel-tier-desc" style="display:block;">Initial City Pilot</span>
+              </div>
+              <div class="funnel-bar-track">
+                <div class="funnel-bar-fill fill-som-y1">5,000–10,000 Pilot Users</div>
+              </div>
+              <div class="funnel-value">5,000–10,000</div>
+            </div>
+          </div>
+
+          <p class="funnel-footnote">
+            *Illustrative estimate for a B-school assignment — based on urban middle-class households with internet access and multiple financial instruments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 4: Exploring Ideas (§4.4)
+         ======================================================================= -->
+    <section id="ideation" class="section-wrapper alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-pill">IDEATION & CONCEPT SELECTION</span>
+          <h2 class="section-title">Exploring Ideas & Winning Concept</h2>
+          <p class="section-subtitle">We evaluated 5 architectural concepts across 8 key user segments to find the most empathetic, frictionless solution.</p>
+        </div>
+
+        <!-- 8 User Segment Cards -->
+        <h3 style="font-size: 1.2rem; margin-bottom: 1.25rem;">8 Target Family Segments</h3>
+        <div class="segment-scroll-wrapper">
+          <div class="segment-cards-row">
+            <div class="segment-card">
+              <span class="segment-num">Segment 1</span>
+              <h4 class="segment-title">Remote Urban Nuclear</h4>
+              <p class="segment-desc">Adult children working in tier-1 metro while parents live in hometown.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 2</span>
+              <h4 class="segment-title">Joint Family Record-Keeper</h4>
+              <p class="segment-desc">One patriarch/matriarch holding single-point memory for 6+ relatives.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 3</span>
+              <h4 class="segment-title">Recently Widowed Parent</h4>
+              <p class="segment-desc">Sudden need to uncover accounts previously managed entirely by spouse.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 4</span>
+              <h4 class="segment-title">Self-Employed / Informal</h4>
+              <p class="segment-desc">Assets spread across local business deeds, private receipts, and lockers.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 5</span>
+              <h4 class="segment-title">Digitally Hesitant Parent</h4>
+              <p class="segment-desc">Uses WhatsApp and UPI comfortably, but fears complex banking dashboards.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 6</span>
+              <h4 class="segment-title">Early Cognitive Decline</h4>
+              <p class="segment-desc">Urgent window to document memory before details become irretrievable.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 7</span>
+              <h4 class="segment-title">NRI Adult Child</h4>
+              <p class="segment-desc">Managing aging parents in India from abroad across different time zones.</p>
+            </div>
+            <div class="segment-card">
+              <span class="segment-num">Segment 8</span>
+              <h4 class="segment-title">"Sandwich Generation"</h4>
+              <p class="segment-desc">Adults balancing records for both their aging parents and their in-laws.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evaluation Matrix Table -->
+        <h3 style="font-size: 1.2rem; margin-top: 2.5rem; margin-bottom: 1.25rem;">Idea Evaluation Matrix (Scored 1–5)</h3>
+        <div class="matrix-container">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Idea Concept</th>
+                <th>Feasibility</th>
+                <th>Cost</th>
+                <th>User Impact</th>
+                <th>Ease of Adoption</th>
+                <th>Scalability</th>
+                <th>Risk</th>
+                <th>Time to Build</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="winner-row">
+                <td>
+                  <strong>A. Shared family locker app</strong>
+                  <span class="badge badge-terracotta" style="margin-left: 0.35rem;">WINNER</span>
+                </td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><strong style="color: var(--terracotta);">Selected</strong></td>
+              </tr>
+              <tr>
+                <td>B. Human concierge service</td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill">1</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td>Too high cost/low scale</td>
+              </tr>
+              <tr>
+                <td>C. Bank/insurer-embedded feature</td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td>Institutions won't index rivals</td>
+              </tr>
+              <tr>
+                <td>D. WhatsApp-bot reminders</td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><span class="score-pill score-top">5</span></td>
+                <td>Too ephemeral for emergency lookup</td>
+              </tr>
+              <tr>
+                <td>F. Insurer-led portal</td>
+                <td><span class="score-pill">3</span></td>
+                <td><span class="score-pill score-high">4</span></td>
+                <td><span class="score-pill">2</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td><span class="score-pill">1</span></td>
+                <td><span class="score-pill">3</span></td>
+                <td>High conflict of interest</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Idea E Callout Box -->
+        <div class="callout-box">
+          <div class="callout-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </div>
+          <div>
+            <h4 class="callout-title">Why not a will-writing app? (Idea E Rejection)</h4>
+            <p class="callout-text">
+              Will-writing demands high emotional readiness and legal finality that Indian families resist on Day 1. SURELY instead starts with the neutral, non-threatening posture of a simple <em>"where are the keys and passbooks"</em> checklist, building trust before complex estate planning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 5: The Clickable Prototype (§4.5 & §5)
+         ======================================================================= -->
+    <section id="prototype" class="section-wrapper prototype-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-pill">INTERACTIVE CLICKABLE PROTOTYPE</span>
+          <h2 class="section-title">Test the SURELY Prototype</h2>
+          <p class="section-subtitle">A live, interactive mobile mock app shell pre-populated with the sample Rao family. Click around without signing up!</p>
+        </div>
+
+        <div class="prototype-framing-banner">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <span>This is a working click-through — try adding an entry, opening emergency mode, or masking a value.</span>
+        </div>
+
+        <div class="prototype-interactive-layout">
+          <!-- Guide Sidebar Left -->
+          <div class="prototype-guide-sidebar">
+            <div class="guide-step-card active" data-step="1">
+              <div class="guide-step-header">
+                <span class="guide-step-num">1</span>
+                <span class="guide-step-title">Family Space Checklist</span>
+              </div>
+              <p class="guide-step-text">See the 8 categories with 5 complete and 3 empty. The progress bar reflects family completeness live.</p>
+            </div>
+
+            <div class="guide-step-card" data-step="2">
+              <div class="guide-step-header">
+                <span class="guide-step-num">2</span>
+                <span class="guide-step-title">Category Detail & Masking</span>
+              </div>
+              <p class="guide-step-text">Open "Insurance" or "Bank Accounts" and tap the lock chip (••••••) to see how sensitive values are shielded for dignity.</p>
+            </div>
+
+            <div class="guide-step-card" data-step="3">
+              <div class="guide-step-header">
+                <span class="guide-step-num">3</span>
+                <span class="guide-step-title">Add Entry in Under 60s</span>
+              </div>
+              <p class="guide-step-text">Tap any empty category (e.g. Digital or Investments), fill the short guided form, and watch the card flip to complete!</p>
+            </div>
+
+            <div class="guide-step-card" data-step="4">
+              <div class="guide-step-header">
+                <span class="guide-step-num">4</span>
+                <span class="guide-step-title">Calm Emergency Mode</span>
+              </div>
+              <p class="guide-step-text">Tap the bottom Emergency Mode button to experience the stripped-down, high-contrast night screen with tap-to-call.</p>
+            </div>
+          </div>
+
+          <!-- Phone Mockup Frame Center -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-mockup-frame">
+              <!-- Notch Bar -->
+              <div class="phone-notch-bar">
+                <span class="phone-status-time">9:41</span>
+                <div class="phone-notch-pill"></div>
+                <div class="phone-status-icons">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect width="18" height="10" x="3" y="7" rx="2"/></svg>
+                </div>
+              </div>
+
+              <!-- Persona Switcher Toolbar -->
+              <div class="phone-persona-toolbar">
+                <div class="persona-switch-group">
+                  <button class="persona-btn active" id="persona-ananya-btn" title="View as adult child coordinator">
+                    <span class="persona-avatar-dot">AR</span>
+                    <span>Ananya</span>
+                  </button>
+                  <button class="persona-btn" id="persona-suresh-btn" title="View as parent">
+                    <span class="persona-avatar-dot parent">SR</span>
+                    <span>Suresh</span>
+                  </button>
+                </div>
+                <button class="phone-reset-btn" id="phone-reset-btn" title="Reset to initial 5/8 seed state">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path></svg>
+                  <span>Reset Seed</span>
+                </button>
+              </div>
+
+              <!-- Viewport Root for Screens 1-4 -->
+              <div id="prototype-viewport" class="prototype-viewport">
+                <!-- Injected dynamically by prototype.js -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Highlights Right -->
+          <div class="prototype-guide-sidebar">
+            <div class="guide-step-card" style="border-left: 4px solid var(--sage);">
+              <h4 style="font-size: var(--text-sm); font-weight: 700; color: var(--sage-dark);">Two-Sided Collaborative Ledger</h4>
+              <p class="guide-step-text" style="margin-top: 0.35rem;">
+                Built for two people (Parent & Adult Child), showing who added what, preventing the feeling of one-sided surveillance.
+              </p>
+            </div>
+
+            <div class="guide-step-card" style="border-left: 4px solid var(--gold-muted);">
+              <h4 style="font-size: var(--text-sm); font-weight: 700; color: #8C6A28;">Zero Fintech Dashboard Fatigue</h4>
+              <p class="guide-step-text" style="margin-top: 0.35rem;">
+                No continuous syncing, no alarming red drop charts, no robot icons. Designed to feel like a cherished family diary.
+              </p>
+            </div>
+
+            <div class="guide-step-card" style="border-left: 4px solid var(--terracotta);">
+              <h4 style="font-size: var(--text-sm); font-weight: 700; color: var(--terracotta-dark);">Offline-Ready & Persistent</h4>
+              <p class="guide-step-text" style="margin-top: 0.35rem;">
+                Works in-browser state with optional localStorage saving, so progress survives page reloads seamlessly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Storyboard 2: The SURELY Solution (5 Panels) -->
+        <div class="prototype-solution-story">
+          <div class="storyboard-strip-header">
+            <h3 style="font-size: 1.25rem;">Storyboard 2 — The SURELY Solution Experience</h3>
+            <span class="badge badge-sage">5 Experience Beats</span>
+          </div>
+
+          <div class="storyboard-solution-grid">
+            <div class="storyboard-card">
+              <div class="storyboard-img-box">
+                <span class="storyboard-panel-badge">S2 · Panel 1</span>
+                <img src="img/storyboard-2-panel-1.jpg" alt="Daughter showing father Surely app over weekend tea" class="storyboard-img" loading="lazy">
+              </div>
+              <p class="storyboard-caption"><strong>Weekend Invite:</strong> Ananya visits Suresh and suggests a quick 20-minute casual setup over afternoon tea.</p>
+            </div>
+
+            <div class="storyboard-card">
+              <div class="storyboard-img-box">
+                <span class="storyboard-panel-badge">S2 · Panel 2</span>
+                <img src="img/storyboard-2-panel-2.jpg" alt="Father and daughter adding guided entries under 60 seconds with smiling faces" class="storyboard-img" loading="lazy">
+              </div>
+              <p class="storyboard-caption"><strong>60-Second Guided Entry:</strong> They list 5 core items effortlessly. Category cards illuminate in sage green.</p>
+            </div>
+
+            <div class="storyboard-card">
+              <div class="storyboard-img-box">
+                <span class="storyboard-panel-badge">S2 · Panel 3</span>
+                <img src="img/storyboard-2-panel-3.jpg" alt="Phone screen showing masked bank balance with lock icon for privacy" class="storyboard-img" loading="lazy">
+              </div>
+              <p class="storyboard-caption"><strong>Dignity & Privacy:</strong> Suresh masks exact rupee balances; Ananya sees location and policy names without prying.</p>
+            </div>
+
+            <div class="storyboard-card">
+              <div class="storyboard-img-box">
+                <span class="storyboard-panel-badge">S2 · Panel 4</span>
+                <img src="img/storyboard-2-panel-4.jpg" alt="Daughter using emergency mode at hospital finding TPA number in 5 seconds" class="storyboard-img" loading="lazy">
+              </div>
+              <p class="storyboard-caption"><strong>Calm in Crisis:</strong> During a late-night hospital visit, Ananya pulls up TPA cards in 5 seconds via Emergency Mode.</p>
+            </div>
+
+            <div class="storyboard-card">
+              <div class="storyboard-img-box">
+                <span class="storyboard-panel-badge">S2 · Panel 5</span>
+                <img src="img/storyboard-2-panel-5.jpg" alt="Family sitting together laughing with complete peace of mind" class="storyboard-img" loading="lazy">
+              </div>
+              <p class="storyboard-caption"><strong>Shared Peace of Mind:</strong> Generational trust restored without fear, clinical forms, or awkward confrontation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 6: What We Learned (Validation) (§4.6)
+         ======================================================================= -->
+    <section id="validation" class="section-wrapper">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-pill">USER TESTING & VALIDATION</span>
+          <h2 class="section-title">What We Learned From Real Families</h2>
+          <p class="section-subtitle">We conducted qualitative prototype validation with 13 participants across India to stress-test our assumptions.</p>
+        </div>
+
+        <!-- Stat Strip -->
+        <div class="validation-stats-strip">
+          <div class="val-stat-box">
+            <div class="val-stat-number">13</div>
+            <div class="val-stat-text">Participants Tested & Interviewed</div>
+          </div>
+          <div class="val-stat-box">
+            <div class="val-stat-number">11 of 13</div>
+            <div class="val-stat-text">Confirmed Personal Document Fragmentation</div>
+          </div>
+          <div class="val-stat-box">
+            <div class="val-stat-number">4.1 / 5</div>
+            <div class="val-stat-text">Average Anxiety & Severity Score</div>
+          </div>
+          <div class="val-stat-box">
+            <div class="val-stat-number">5.2</div>
+            <div class="val-stat-text">Institutions per Family on Average</div>
+          </div>
+        </div>
+
+        <!-- 4-Quadrant Card Layout (Confirmed / Challenged / Surprised / Changed) -->
+        <div class="validation-quadrant-grid">
+          <div class="val-quadrant-card confirmed">
+            <div class="val-card-header">
+              <span class="badge badge-sage">01</span>
+              <h3 class="val-card-title">What Was Confirmed</h3>
+            </div>
+            <ul class="val-list">
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                <span><strong>Pervasive Anxiety:</strong> 85% of adult children worry privately about finding health insurance and bank lockers during an emergency.</span>
+              </li>
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+                <span><strong>No Unified Single Record:</strong> Families have fragments in WhatsApp chats, notes apps, physical files, and memory.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="val-quadrant-card challenged">
+            <div class="val-card-header">
+              <span class="badge badge-terracotta">02</span>
+              <h3 class="val-card-title">What Was Challenged</h3>
+            </div>
+            <ul class="val-list">
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>
+                <span><strong>Death is Not the Trigger:</strong> Framing around "after you pass away" triggers denial and reluctance. Framing around "twenty minutes of weekend organization" had 3x higher willingness.</span>
+              </li>
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>
+                <span><strong>No Real-Time Bank Sync:</strong> Users actively disliked linking net-banking credentials; manual entry of location was perceived as 10x safer.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="val-quadrant-card surprised">
+            <div class="val-card-header">
+              <span class="badge badge-gold">03</span>
+              <h3 class="val-card-title">What Surprised Us</h3>
+            </div>
+            <ul class="val-list">
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg></span>
+                <span><strong>Masking is the Trust Keystone:</strong> Parents loved the ability to hide the exact rupee amount while still letting children know the account exists.</span>
+              </li>
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg></span>
+                <span><strong>Emergency Mode Was the "Aha" Feature:</strong> The high-contrast, uncluttered emergency screen made the utility immediately apparent.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="val-quadrant-card changed">
+            <div class="val-card-header">
+              <span class="badge badge-terracotta">04</span>
+              <h3 class="val-card-title">What We Changed</h3>
+            </div>
+            <ul class="val-list">
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline></svg></span>
+                <span><strong>Under 60s Single Screen Form:</strong> Replaced multi-step wizards with a single clean 5-field entry card that takes less than a minute.</span>
+              </li>
+              <li class="val-list-item">
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline></svg></span>
+                <span><strong>Checklist Completeness Metaphor:</strong> Added the 8-category visual checklist to provide satisfying closure as items are filled.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         Section 7: Innovation Story Close (§4.7)
+         ======================================================================= -->
+    <section id="story" class="section-wrapper alt-bg story-close-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow-pill">INNOVATION STORY</span>
+          <h2 class="section-title">The SURELY Journey</h2>
+          <p class="section-subtitle">How twenty ordinary minutes transform generational uncertainty into lasting family peace of mind.</p>
+        </div>
+
+        <div class="story-narrative-block">
+          <p class="narrative-quote-lead">"It didn't need a crisis. It needed twenty ordinary minutes."</p>
+
+          <!-- 5-Beat Innovation Timeline -->
+          <div class="narrative-timeline">
+            <div class="timeline-step">
+              <span class="timeline-step-num">Beat 1 · Problem</span>
+              <h4 class="timeline-step-title">Scattered Memories</h4>
+              <p class="timeline-step-desc">A generation of hard-earned savings trapped across drawers, passbooks, and aging memory.</p>
+            </div>
+
+            <div class="timeline-step">
+              <span class="timeline-step-num">Beat 2 · Insight</span>
+              <h4 class="timeline-step-title">Dignity First</h4>
+              <p class="timeline-step-desc">Parents don't resist sharing information; they resist feeling monitored or losing control.</p>
+            </div>
+
+            <div class="timeline-step">
+              <span class="timeline-step-num">Beat 3 · Scale</span>
+              <h4 class="timeline-step-title">₹78,213 Cr Blindspot</h4>
+              <p class="timeline-step-desc">Over 150M seniors and millions of families navigate this invisible national crisis every year.</p>
+            </div>
+
+            <div class="timeline-step">
+              <span class="timeline-step-num">Beat 4 · Solution</span>
+              <h4 class="timeline-step-title">The Shared Ledger</h4>
+              <p class="timeline-step-desc">A calm, collaborative memory checklist with privacy masking and instant emergency clarity.</p>
+            </div>
+
+            <div class="timeline-step">
+              <span class="timeline-step-num">Beat 5 · Outcome</span>
+              <h4 class="timeline-step-title">Peace of Mind</h4>
+              <p class="timeline-step-desc">Generations connected over tea, confident that when it matters, everyone knows where to look.</p>
+            </div>
+          </div>
+
+          <!-- Closing Artwork -->
+          <div class="closing-image-container">
+            <div class="closing-image-wrapper">
+              <img src="img/closing-hands.jpg" alt="Close-up of elderly father hand and adult daughter hand resting gently over an open leather family diary with brass key in golden sunlight" class="closing-image" loading="lazy">
+            </div>
+            <p class="closing-caption">
+              The key to what your family already owns — kept safely, together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Section 8: Footer
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo" style="margin-bottom: 0.5rem;">
+            <div class="brand-icon-box">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="7.5" cy="15.5" r="5.5"></circle><path d="m21 2-9.6 9.6"></path><path d="m15.5 7.5 3 3L22 7l-3-3"></path></svg>
+            </div>
+            <span class="brand-wordmark">SURELY</span>
+          </div>
+          <p style="font-size: var(--text-xs); color: var(--brown-soft); line-height: 1.5;">
+            A shared family financial and document memory platform. Built to make sure Indian families always know where to find what they already own.
+          </p>
+          <p class="footer-disclaimer">
+            *Built as an academic B-school innovation assignment showcase. All product data, names, and numbers shown are illustrative.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Innovation Story</h5>
+          <ul>
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#opportunity">Market Opportunity</a></li>
+            <li><a href="#ideation">Ideation & Scoring</a></li>
+            <li><a href="#validation">User Validation</a></li>
+            <li><a href="#story">The Narrative</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h5>Prototype Demo</h5>
+          <ul>
+            <li><a href="#prototype">Interactive App Shell</a></li>
+            <li><a href="#prototype" onclick="SurelyState.setScreen('checklist')">Checklist View</a></li>
+            <li><a href="#prototype" onclick="SurelyState.setScreen('category', {category:'insurance'})">Insurance Detail</a></li>
+            <li><a href="#prototype" onclick="SurelyState.setScreen('emergency')">Emergency Mode</a></li>
+            <li><a href="#prototype" onclick="SurelyState.resetToSeed()">Reset Demo Data</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 SURELY Innovation Project. Course Deliverable.</span>
+        <span>Crafted with Warm Ledger Design Principles</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="js/icons.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/prototype.js"></script>
+  <script src="js/story.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
