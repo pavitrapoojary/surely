@@ -35,8 +35,6 @@
   - [Key User Flows & Screens](#key-user-flows--screens)
   - [Persona Switcher (Dual Perspectives)](#persona-switcher-dual-perspectives)
 - [User Testing & Validation Findings](#-user-testing--validation-findings)
-- ["Warm Ledger" Design System](#-warm-ledger-design-system)
-- [Tech Stack & Architecture](#-tech-stack--architecture)
 - [Getting Started](#-getting-started)
 - [Innovation Story & Narrative Close](#-innovation-story--narrative-close)
 
@@ -266,99 +264,13 @@ Qualitative testing conducted with **13 family participants** across India revea
 
 ---
 
-## 🎨 "Warm Ledger" Design System
-
-Surely deliberately rejects the generic "AI startup" look (no dark neon, no purple-blue gradients, no cold glassmorphism). It adopts the tactile warmth of a cherished family diary.
-
-### Color Tokens
-
-| Token | Hex | Role |
-|:---|:---:|:---|
-| `--cream` | `#FBF6EE` | Canvas background |
-| `--cream-warm` | `#F3E9D8` | Alternate section background |
-| `--terracotta` | `#C66B4F` | Primary brand accent, CTAs, active states |
-| `--terracotta-dark` | `#A85338` | Hover and pressed states |
-| `--sage` | `#8A9A7E` | Secondary accent, complete checklist state |
-| `--sage-dark` | `#5F6E54` | Typography on sage backgrounds |
-| `--brown-ink` | `#3B2E28` | Primary reading text |
-| `--brown-soft` | `#6B5C52` | Subtitles, secondary captions |
-| `--gold-muted` | `#C9A15A` | Key accents, highlight tags |
-| `--border-soft` | `#E4D9C6` | Subtle dividers and card outlines |
-
-### Typography
-
-- **Headings:** `Fraunces` & `Lora` — Warm, editorial humanist serifs.
-- **UI & Body:** `Inter` & `Source Sans 3` — Clean, legible humanist sans.
-
----
-
-## 💻 Tech Stack & Architecture
-
-- **Core Technologies:** HTML5, Modern Vanilla CSS3, Vanilla JavaScript (ES6+).
-- **Zero Build Tools:** No Webpack, Vite, npm, or Babel required. Runs out of the box in any modern browser.
-- **State Management:** Reactive in-memory state store (`SurelyState`) with automatic fallback to `localStorage`.
-- **Modular Component Structure:**
-
-```
-surely/
-├── index.html                  # Single-page narrative & prototype entry
-├── README.md                   # Complete documentation
-├── SURELY_Website_Spec.md      # Full innovation website specification
-├── surely-prototype-spec.md    # Prototype interaction specification
-├── img/                        # High-resolution generated imagery
-│   ├── hero-cover.jpg          # Hero artwork
-│   ├── storyboard-1-panel-1.jpg# Problem S1·P1
-│   ├── storyboard-1-panel-2.jpg# Problem S1·P2
-│   ├── storyboard-1-panel-3.jpg# Problem S1·P3
-│   ├── storyboard-1-panel-4.jpg# Problem S1·P4
-│   ├── storyboard-2-panel-1.jpg# Solution S2·P1
-│   ├── storyboard-2-panel-2.jpg# Solution S2·P2
-│   ├── storyboard-2-panel-3.jpg# Solution S2·P3
-│   ├── storyboard-2-panel-4.jpg# Solution S2·P4
-│   ├── storyboard-2-panel-5.jpg# Solution S2·P5
-│   └── closing-hands.jpg       # Closing story artwork
-├── styles/
-│   ├── main.css                # Design system tokens, typography, grid
-│   ├── views.css               # Marketing narrative, quotes, TAM funnel
-│   └── components.css          # Mobile mock frame, checklist cards, buttons
-└── js/
-    ├── app.js                  # App bootstrap & event wiring
-    ├── state.js                # In-memory reactive state manager
-    ├── prototype.js            # Mock phone UI renderer & view coordinator
-    ├── story.js                # Scroll observers & interactive guide steps
-    ├── icons.js                # Inline SVG icon generator
-    ├── components/             # Reusable UI widgets (toast, header, guide)
-    └── views/                  # Screen view templates (home, add, emergency, etc.)
-```
-
----
-
 ## 🚀 Getting Started
 
-### Option 1: Try Online (Instant)
+### Try Online (Instant)
 Access the live deployment directly in your browser:
 👉 **[https://surely-flax.vercel.app/](https://surely-flax.vercel.app/)**
 
-### Option 2: Run Locally
-To run the Surely showcase and prototype locally:
-
-1. **Clone or Navigate to the Repository:**
-   ```bash
-   cd surely
-   ```
-
-2. **Open in Browser:**
-   - Double-click `index.html` directly in your file explorer, **OR**
-   - Serve using any static HTTP server:
-     ```bash
-     # Python 3
-     python -m http.server 8000
-     
-     # Node.js (npx)
-     npx serve .
-     ```
-
-3. **Explore the Demo:**
+**Explore the Demo:**
    - Scroll through the innovation story, market sizing, and user validation.
    - Interact with the phone frame in the **Prototype Demo** section.
    - Click **Reset Seed** at any time to restore the initial state.
